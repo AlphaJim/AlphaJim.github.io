@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+My portfolio
+    </title>
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="IE=edge" />
+<link rel="stylesheet" id="theme-style" type="text/css" href="light.css">
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+  <section class="wrapper">
+
+      <section class="container">
+
+
+
+<section class="leftsection">
+
+
+    <center>
+        <div class="profilepic" id="profilepic">
+          <img src="profilepic.jpg" alt="Alpha's profile pic">
+        </div>
+        <p><h2>Alpha Jim Obiero</h2></p>
+        <p><h3>Software Developer</h3></p>
+
+
+
+
+    <div class="socials">
+
+      <div class="socials">
+        <p>Contact me</p>
+      </div>
+
+
+      <div class="socials" id="telegram">
+        <a href="https://t.me/alpha_jim" target="blank">
+          <img src="telegram.png" width="50" height="50">
+        </a>
+      </div>
+
+      <div class="socials" id="facebook">
+        <a href="https://facebook.com/alpha.jim.008" target="blank">
+          <img src="facebook.png" width="50" height="50">
+        </a>
+      </div>
+
+      <div class="socials" id="gmail">
+        <a href="mailto:alphajimobiero12535@gmail.com">
+          <img src="gmail.png" width="50" height="50">
+        </a>
+      </div>
+
+      <div class="socials" id="x">
+        <a href="https://x.com/jim_0008" target="blank">
+          <img src="x.jpeg" width="50" height="50">
+        </a>
+      </div>
+    </div>
+
+    <div class="togglebutton">
+<img src="lightmode.jpeg" alt="light-mode image" id="sun" onclick="enableLightMode()" >
+
+<img src="darkmode.png" alt="dark-mode image" id="moon" onclick="enableDarkMode()">
+    </div>
+
+<div id="arrowwrapper">
+  <div id="wrapper-inner">
+    <div id="scroll-down">
+      <span class="arrow-down">
+
+      </span>
+
+      <div id="scroll-title">
+        Scroll down
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+  </center>
+
+
+      </section>
+
+
+
+        <section class="rightsection">
+
+
+
+
+          <div class="animated-div" id="myDiv">
+            <p id="typed-text"></p>
+            <span class="cursor"></span>
+          </div>
+
+          <script>
+            const sentences = [
+              "Hi",
+              "I'm Jim",
+              "Welcome to my portfolio"
+            ];
+            const typingSpeed = 50; // Adjust typing speed as needed
+            let sentenceIndex = 0;
+            let charIndex = 0;
+
+            function typeNextCharacter() {
+              if (sentenceIndex < sentences.length) {
+                const sentence = sentences[sentenceIndex];
+                const typedText = document.getElementById("typed-text");
+                typedText.textContent = sentence.substring(0, charIndex);
+                charIndex++;
+
+                if (charIndex <= sentence.length) {
+                  setTimeout(typeNextCharacter, typingSpeed);
+                } else {
+                  sentenceIndex++;
+                  charIndex = 0;
+                  setTimeout(typeNextSentence, 1000); // Pause before typing next sentence
+                }
+              }
+            }
+
+            function typeNextSentence() {
+              const cursor = document.querySelector(".cursor");
+              cursor.style.display = "none";
+              setTimeout(() => {
+                cursor.style.display = "inline-block";
+                typeNextCharacter();
+                if (sentenceIndex === sentences.length) {
+                  resizeDiv();
+                }
+              }, 500); // Pause before showing cursor and typing next sentence
+            }
+
+            function resizeDiv() {
+              const div = document.getElementById("myDiv");
+              div.style.animation = "resizeDiv 3s forwards"; // Adjust animation duration as needed
+            }
+
+            typeNextSentence();
+          </script>
+
+
+
+
+
+
+
+
+
+
+<div class="hr">
+</div>
+
+<div class="About" id="About">
+  <div class="abouttitle">
+<span class="about-a">A</span>
+<span class="about-b">b</span>
+<span class="about-o">o</span>
+<span class="about-u">u</span>
+<span class="about-t">t</span>
+
+  </div>
+
+
+
+  <p>
+    Hello! I'm<b> Alpha Jim Obiero</b>
+ </p>
+</div>
+
+<div class="about2">
+  <p>I'm a <b>Front-End Developer</b> from Nairobi, Kenya. Currently I'm pursuing a major in  Software Development  and a minor in <b>Full-Stack development</b>, <b>Data Science </b>and <b>Machine Learning</b>.</p>
+</div>
+
+     <p>Let's connect and explore opportunities together.</p>
+
+
+    <div class="resume">
+    <center>
+      <div
+        class="download">
+          <a href="Portfolio\Resume.pdf" download="Alpha_Jim_resume.pdf"></a>
+    </center>
+  </div>
+
+</div>
+
+
+
+<div class="hr">
+</div>
+
+<div class="Skillsetcontainer>"
+
+  <div class="skillsetcontainer" id="skillsettitle">
+    <span class="skillset-s">S</span>
+    <span class="skillset-k">k</span>
+    <span class="skillset-i">i</span>
+    <span class="skillset-1l">l</span>
+    <span class="skillset-2l">l</span>
+    <span class="skillset-2s">s</span>
+    <span class="skillset-e">e</span>
+    <span class="skillset-t">t</span>
+
+      </div>
+<div class="skillsetintro">
+  <p>These are the technologies that I have worked with:</p>
+</div>
+ <div class="Skillset">
+
+
+<div class="Skill" id="javascript">
+
+
+  <div class="skill" id="skillpic">
+    <img src="javascript.png" alt="javascript logo">
+   </div>
+<center>
+   <div class="Skillname" id="skilllabel">
+    <p>JavaScript</p>
+   </div>
+  </center>
+
+
+    </div>
+
+
+
+
+ <div class="Skill" id="python">
+
+
+  <div class="skill" id="skillpic">
+    <img src="python.png" alt="python logo">
+   </div>
+<center>
+   <div class="Skillname" id="skilllabel">
+    <p>Python</p>
+   </div>
+  </center>
+
+    </div>
+
+
+ <div class="Skill" id="github">
+
+
+  <div class="skill" id="skillpic">
+    <img src="git.png" alt="git logo">
+   </div>
+<center>
+   <div class="Skillname" id="skilllabel">
+    <p>Git</p>
+   </div>
+  </center>
+
+
+            </div>
+
+
+
+
+ <div class="Skill" id="html">
+
+  <div class="skill" id="skillpic">
+    <img src="html.png" alt="html logo">
+   </div>
+<center>
+   <div class="Skillname" id="skilllabel">
+    <p>HTML</p>
+   </div>
+  </center>
+
+
+            </div>
+
+
+
+ <div class="Skill" id="css">
+
+  <div class="skill" id="skillpic">
+    <img src="css.png" alt="css logo">
+   </div>
+<center>
+   <div class="Skillname" id="skilllabel">
+    <p>CSS</p>
+   </div>
+  </center>
+
+
+            </div>
+
+
+
+
+
+    </div>
+  </div>
+
+
+  <div class="hr">
+  </div>
+
+
+<div class="Projects" id="Projects">
+  <div class="projectcontainer" id="projecttitle">
+    <span class="project-p">P</span>
+    <span class="project-r">r</span>
+    <span class="project-o">o</span>
+    <span class="project-j">j</span>
+    <span class="project-e">e</span>
+    <span class="project-c">c</span>
+    <span class="project-t">t</span>
+    <span class="project-s">s</span>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+   <p>Over the recent years I have amassed skills and qualities that have enebled me to create various projects.Here are samples of my completed projects</p>
+
+
+
+
+
+<div class="hr">
+</div>
+
+<div class="Linkscontainer">
+  <div class="Linkscontainer" id="Linkstitle">
+    <span class="Link-l">L</span>
+    <span class="Link-i">i</span>
+    <span class="Link-n">n</span>
+    <span class="Link-k">k</span>
+    <span class="Link-s">s</span>
+  </div>
+<div class="Linkssubcontainer">
+<div class="Links" id="github">
+  <a href="github.com">
+    <img src="github.png" width="50" height="50">
+  </a>
+
+
+<div class="linkname">
+  <p>Github</p>
+</div>
+</div>
+
+    <div class="Links" id="linkedin">
+      <a href="https://www.linkedin.com/in/alpha-jim-836295220">
+        <img src="linkedin.png" width="50" height="50">
+      </a>
+
+    <div class="linkname">
+      <p>Linkedin</p>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+
+
+<br><br>
+
+
+</div>
+
+
+<div class="hr">
+</div>
+
+
+<div class="Refereescontainer">
+  <div class="Refereescontainer" id="refereestitle">
+    <span class="referee-r">R</span>
+    <span class="referee-e">e</span>
+    <span class="referee-f">f</span>
+    <span class="referee-2e">e</span>
+    <span class="referee-2r">r</span>
+    <span class="referee-3e">e</span>
+    <span class="referee-4e">e</span>
+    <span class="referee-s">s</span>
+  </div>
+  <div class="Referees">
+
+    <div class="Referee" id="referee1">
+      <center>
+      <img src="profile.png" class="profilelogo">
+      <p>"You really work well in a fast-paced setting. Really enjoyed working together with you"</p>
+      <h4><p>Festus Maithya</p></h4>
+      <p>Software Developer</p>
+<p>KCA University</p>
+<a href="mailto:festusmaithya264@gmail.com">
+<img src="gmail.png" class="gmaillogo"></a>
+</center>
+    </div>
+
+    <div class="Referee" id="referee2">
+      <center>
+      <img src="profile.png" class="profilelogo">
+      <p>"You posess an elite problem-solving skills "</p>
+      <p>""</p>
+      <h4><p>Erick Omondi</p></h4>
+      <p>Integrations engineer</p>
+<p>Safaricom PLC</p>
+<a href="mailto:erickomondiya@gmail.com">
+<img src="gmail.png" class="gmaillogo"></a>
+</center>
+    </div>
+
+    <div class="Referee" id="referee3">
+      <center>
+      <img src="profile.png" class="profilelogo">
+      <p>" Your adaptability, artistic flair and positive attitude complements it all "</p>
+      <h4><p>Damian Kyoni</p></h4>
+      <p>Software Developer</p>
+<p>KCA University</p>
+<a href="mailto:damiankyoni@gmail.com">
+<img src="gmail.png" class="gmaillogo"></a>
+</center>
+    </div>
+  </div>
+
+</div>
+
+<div class="hr">
+</div>
+
+<div class="messagecontainer">
+
+
+</div>
+
+
+
+<div class="cats">
+  <p>Besides programming, I love cats too.They help us solve real world problems</p>
+  <img src="cat.png">
+  <p>Thanks for visiting my portfolio. Let's connect and explore opportunities together!</p>
+</div>
+
+<div class="hr">
+</div>
+
+</div>
+</section>
+</section>
+
+
+  <footer class="footer" style="width: 100%;" >
+
+    <div class="footercontainer">
+        <p class="copyright">Copyright &#169 Alpha <br>2023</p>
+    </div>
+
+</footer>
+</section>
+<script>
+    // Add a click event listener to the hamburger menu icon
+    document.querySelector('.menu-icon').addEventListener('click', function() {
+      // Toggle the "show" class on the dropdown menu
+     document.querySelector('.dropdown').classList.toggle('show');
+    });
+
+window.onscroll=function(){
+  scrollFunction()};
+  function scrollFunction() {
+if (document.body.scrollTop> 20 ||
+
+document.documentElement.scrollTop > 20) {
+  document.getElementById("navbar").style.top="0";
+}
+else {
+  document.getElementById("navbar").style.top ="-50px";
+}
+
+}
+
+
+  </script>
+
+  <script>
+    const themeStyle = document.getElementById('theme-style');
+
+    function enableDarkMode(){
+      themeStyle.href = 'dark.css';
+      document.body.classList.add('darkmode');
+    }
+
+    function enableLightMode(){
+        themeStyle.href = 'light.css';
+        document.body.classList.remove('darkmode');
+
+    }
+
+      </script>
+
+
+
+      <script>
+
+const divs =document.querySelectorAll(".left-section, .right-section");
+function scrollAppear(){
+sections.forEach(div=>{
+  const content =div.querySelectorAll(".")
+}
+)
+
+}
+
+      </script>
+</body>
+
+
+
+</html>
